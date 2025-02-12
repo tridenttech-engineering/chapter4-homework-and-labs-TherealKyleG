@@ -1,7 +1,7 @@
 //Advanced16.cpp
 //Created/revised by Kyle Gallagher on 02/10/2025
 
-  #include <iostream>
+   #include <iostream>
   #include <iomanip>
   using namespace std;
   int main()
@@ -10,16 +10,17 @@
     double store1 = 0.0;
     double store2 = 0.0;
     double total = 0.0;
-    int store1Int = static_cast<int>(store1 *   increase * 100 + .5);
-    int store2Int = static_cast<int>(store2 * increase * 100 + .5);
-    int totalInt = store1Int + store2Int;
+    double store1Int = 0.0;
+    double store2Int = 0.0;
+   double totalInt = 0.0;
     cout << "Store 1 sales: ";
     cin >> store1;
     cout << "Store 2 sales: ";
     cin >> store2;
-    store1 = store1 * increase;
-    store2 = store2 * increase;
-    total = store1 + store2;
+    store1Int = static_cast<int>(store1 *   increase * 100 + .5);
+    store2Int = static_cast<int>(store2 * increase * 100 + .5);
+    totalInt = store1Int + store2Int;
+    
     cout << "Total sales: " << total << endl;
     cout << fixed << setprecision(2) << endl;
     cout << store1Int / 100.0 << " --->Store 1" << endl;
